@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Crea un programa que calcule el índice de masa corporal (IMC) de una
+    persona y muestre un mensaje indicando si la persona está bajo peso, peso
+    normal, sobrepeso u obesidad.-->
+
+    <script>
+        let peso = parseFloat(prompt("Ingrese su peso kg"));
+        let altura = parseFloat(prompt("Ingrese su altura m"));
+
+        IMC= peso/altura;
+
+        if(IMC < 20){
+            document.write("Esta baja de peso : " + IMC);
+        }else if (IMC >= 20 || IMC <= 23.9){
+            document.write("Tiene peso normal : " + IMC);
+        }else{
+            document.write("Tiene sobrepeso : " + IMC);
+        }
+    </script>
+
+</body>
+</html>
