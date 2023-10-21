@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- En un almacén se hace un 20% de descuento a los clientes cuya compra
+    supere los $1000, a los demás solo se les hace un 5% de descuento ¿ Cuál
+    será la cantidad que pagara una persona por su compra?-->
+
+    <script>
+        let Valor_compra = prompt("Ingrese el valor de la compra")
+
+        descuento1 = Valor_compra*0.8;
+        descuento2 = Valor_compra*0.95;
+
+
+        if(Valor_compra > 1000){
+            document.write(" Tuvo un descuento del 20% porque su compra es mayor a $1000. Total a pagar = $" + descuento1)
+        }else {
+            document.write(" Tuvo un descuento del 5% por su compra. Total a pagar = $" + descuento2)
+        }
+    </script>
+
+</body>
+</html>

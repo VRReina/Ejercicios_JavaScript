@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Programa que lea los nombres y edades de dos personas e imprima cuál de
+    ellas tiene más edad.-->
+
+    <script>
+        let nom1 = prompt("Ingrese el nombre de la primera persona");
+        let edad1 = prompt("Ingrese la edad de la primera persona");
+        let nom2 = prompt("Ingrese el nombre de la segunda persona");
+        let edad2 = prompt("Ingrese el edad de la segunda persona");
+
+        if( edad1 > edad2){
+            document.write(nom1 + " tiene " + edad1 +  " Es mayor que  " + nom2 + " que tiene " + edad2); 
+        }else {
+            document.write(nom2 + " tiene " + edad2 + " Es mayor que  " + nom1 + " que tiene " + edad1); 
+        }
+    </script>
+
+</body>
+</html>

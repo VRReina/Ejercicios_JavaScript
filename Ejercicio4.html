@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir en forma descendente</title>
+</head>
+<body>
+    
+    <!-- Leer dos números y los imprima en forma ascendente -->
+
+    <script>
+        let n1 = prompt("Ingrese el numero 1 : ");
+        let n2 = prompt("Ingrese el numero 2 : ");
+
+        if (n1 < n2 ){
+            document.write("Numeros ordenados en forma ascendente : " + "<br>" + n1 + "<br>" + n2);
+        }else if ( n2 < n1){
+            document.write("Numeros ordenados en forma ascendente : " + "<br>" + n2 + "<br>" + n1);
+        }else {
+            document.write("Los numeros que insgresaste son iguales" + "<br>" + n1 + "=" + n2);
+        }
+
+    </script>
+
+</body>
+</html>

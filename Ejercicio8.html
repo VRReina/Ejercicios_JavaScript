@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig.
+    manera:
+    a) Si trabaja 40 horas o menos se le paga $16000 por hora
+    b) Si trabaja más de 40 horas se le paga $20000 por hora -->
+
+    <script>
+        let horas = parseFloat(prompt("Ingrese la cantidad de horas trabajadas"));
+
+        if(horas <= 40){
+            document.write("Su salario semanal es de : $ " + horas*16000);
+        }else {
+            document.write("Su salario semanal es de : $ " + horas*20000);
+        }
+    </script>
+     
+</body>
+</html>

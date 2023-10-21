@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leer 2 números</title>
+</head>
+<body>
+    <!-- Leer 2 números; si son iguales que los multiplique, si el primero es mayor
+    que el segundo que los reste y si no que los sume.-->
+
+    <script>
+        let num1 =parseFloat(prompt("Ingrese el primer número"));
+        let num2 =parseFloat(prompt("Ingrese el segundo número"));
+
+        if( num1 == num2){
+            document.write("Son iguales. El resultado de la multilplicación es = " + num1*num2);
+        } else if (num1 > num2){
+            document.write("El" + num1 + "es mayor que " + num2 + " El resultado de la resta es = " +(num1-num2));
+        }else{
+            document.write("El" + num2 + "es mayor que " + num1 + " El resultado de la suma es = " +(num1+num2));
+        }
+
+    </script>
+</body>
+</html>

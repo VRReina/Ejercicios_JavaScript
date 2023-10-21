@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Realizar una calculadora con las operaciones básicas suma, división,
+    multiplicación y división.-->
+    <script>
+    let num1 = parseFloat(prompt("Ingrese numero 1"));
+    let operador = prompt("Ingrese operador"); 
+    let num2 = parseFloat(prompt("Ingrese numero 2"));
+
+    function calcular(operador, num1, num2) {
+    if (operador === '+') {
+        return num1 + num2;
+    } else if (operador === '-') {
+        return num1 - num2;
+    } else if (operador === '*') {
+        return num1 * num2;
+    } else if (operador === '/') {
+        if (num2 === 0) {
+        return "No es posible dividir por cero";
+        }
+        return num1 / num2;
+    } else {
+        return "Operador no válido";
+    }
+    }
+
+    const resultado = calcular(operador, num1, num2);
+    document.write("El resultado es: " + resultado);
+
+    </script>
+</body>
+</html>

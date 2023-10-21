@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Compra de camisas</title>
+</head>
+<body>
+    <!-- Hacer un programa que calcule el total a pagar por la compra de camisas. Si
+    se compran tres camisas o mas se aplica un descuento del 20% sobre el total
+    de la compra y si son menos de tres camisas un descuento del 10%.-->
+
+    <script>
+        let Valor_compra = parseFloat(prompt("Ingrese el valor de la compra"))
+        let cantidad = parseFloat(prompt("Ingrese cantidad de camisas"));
+        
+        if(cantidad >= 3){
+            document.write("Por la compra de 3 o más camisas obtinen un decuento del 20%. El total a pagar = $" + Valor_compra*0.8 );
+        }else {
+            document.write("Por la compra de menos de 3 camisas obtinen un decuento del 10%. El total a pagar = $" + Valor_compra*0.9 );
+        }
+    </script>
+
+</body>
+</html>

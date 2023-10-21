@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Cafilificaiones</title>
+</head>
+<body>
+    <!--Dada las 3 calificaciones que el estudiante obtuvo en un curso
+    a) Determinar su promedio
+    b) Indicar si el estudiante aprobó o no aprobó el curso.
+    Las notas deben ser de 1 a 10 y aprueba con un promedio mayor de 6 -->
+    <script>
+        let nota1 = parseFloat(prompt("Ingrese la nota 1 : "));
+        let nota2 = parseFloat(prompt("Ingrese la nota 2 : "));
+        let nota3 = parseFloat(prompt("Ingrese la nota 3 : "));
+
+        promedio = (nota1+nota2+nota3)/3;
+
+        if (promedio > 6){
+            document.write("Aprobo el curso. ¡Felcitaciones! :). Con un promedio de : " + promedio);
+        }else {
+            document.write("Reprobaste el curso :(. Con un promedio de : " + promedio);
+        }
+
+    </script>
+</body>
+</html>
