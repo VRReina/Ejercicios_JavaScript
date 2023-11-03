@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio16</title>
+</head>
+<body>
+    <!--Desarrolla un programa que solicite la nota final de la materia de algoritmos
+    y generar el criterio de la nota, de acuerdo a la siguiente tabla.-->
+
+    <script>
+      
+      let Nota = parseFloat(prompt("Ingrese la nota final : ")) ;
+
+        if ( Nota >= 4.5 && Nota <= 5.0){
+            document.write("Desempeño Superior");
+        }else if (Nota >= 3.9 && Nota <= 4.4){
+            document.write("Desempeño alto");
+        }else if (Nota >= 3.4 && Nota <= 3.8){
+            document.write("Desempeño Basico");
+        }else{
+            document.write("Desempeño Bajo")
+        }
+
+    </script>
+
+</body>
+</html>

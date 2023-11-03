@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio19</title>
+</head>
+<body>
+    <!--.Diseña un programa que solicite el nombre de un usuario y su contraseña. Si
+    el nombre es "admin" y la contraseña es "12345", muestra un mensaje de
+    acceso concedido; de lo contrario, muestra un mensaje de acceso denegado.
+    -->
+
+    <script>
+      
+    let user = prompt("Ingresa tu nombre de usuario:");
+    let contrasena = prompt("Ingresa tu contraseña:");
+
+    if (user === "admin" && contrasena === "12345") {
+        alert("Acceso concedido. ¡Bienvenido, admin!");
+    } else {
+        alert("Acceso denegado. Por favor, verifica tu nombre de usuario y contraseña.");
+    }
+
+    </script>
+
+</body>
+</html>
